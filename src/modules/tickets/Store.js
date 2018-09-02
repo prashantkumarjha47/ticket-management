@@ -100,7 +100,6 @@ class Store {
           this.isAssignModalOpen = false;
         });
         this.agents = toJS(this.agents);
-        console.log(this.agents);
       } else {
         message.error("Error assigning tickets  !!!");
         return;
