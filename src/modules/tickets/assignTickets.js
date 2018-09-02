@@ -1,6 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react";
-import { Modal, Button, Form, Input, Select, DatePicker } from "antd";
+import { Modal, Button, Form, Select, DatePicker } from "antd";
 import store from "./Store";
 
 const FormItem = Form.Item;
@@ -29,8 +29,6 @@ const tailFormItemLayout = {
   }
 };
 
-const { TextArea } = Input;
-
 const AssignTickets = ({ form }) => {
   return (
     <Modal
@@ -56,7 +54,7 @@ const AssignTickets = ({ form }) => {
                 </Option>
               ))}
             </Select>
-          )}
+            )}
         </FormItem>
         <FormItem {...formItemLayout} label="Date">
           {form.getFieldDecorator("date", {

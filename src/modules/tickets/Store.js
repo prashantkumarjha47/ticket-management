@@ -86,7 +86,7 @@ class Store {
     e.preventDefault();
     form.validateFieldsAndScroll((err, values) => {
       if (!err) {
-        this.agents.slice().map(agent => {
+        this.agents.slice().forEach(agent => {
           if (agent.id === values.agent) {
             if (agent.issues.length > 3) {
               message.error("Cannot assign more tickets to this agent");
