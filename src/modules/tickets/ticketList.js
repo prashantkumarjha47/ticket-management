@@ -11,7 +11,6 @@ const TicketList = props => {
     <div>
       <AssignTickets />
       <Table
-        title={() => "Ticket List"}
         dataSource={toJS(store.ticketList)}
         columns={columns()}
         rowKey={(record, i) => i}

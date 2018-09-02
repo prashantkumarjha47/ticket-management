@@ -29,7 +29,7 @@ const columns = () => {
       render: (text, rowData) => {
         return (
           <Icon
-            type="plus-circle-o"
+            type="pushpin"
             onClick={() => store.onAssignTicketsClick(rowData)}
           />
         );
