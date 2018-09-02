@@ -16,8 +16,8 @@ const columns = () => {
     },
     {
       title: "Phone Number",
-      dataIndex: "number",
-      key: "number"
+      dataIndex: "phone",
+      key: "phone"
     },
     {
       title: "Issue Type",
@@ -30,7 +30,7 @@ const columns = () => {
         return (
           <Icon
             type="plus-circle-o"
-            onClick={()=>store.onAssignTicketsClick(rowData)}
+            onClick={() => store.onAssignTicketsClick(rowData)}
           />
         );
       },
@@ -39,4 +39,4 @@ const columns = () => {
     }
   ];
 };
-export default columns
+export default columns;

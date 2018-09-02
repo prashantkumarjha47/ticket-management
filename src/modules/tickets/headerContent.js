@@ -9,7 +9,7 @@ const Header = props => {
       <Button
         type="primary"
         onClick={() => (store.isCreateModalOpen = true)}
-        icon="plus-circle-o"
+        icon="plus"
         size="large"
       >
         Create Tickets

@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "antd";
 import HeaderContent from "./headerContent";
 import TicketList from "./ticketList";
-import "./layout.css"
+import "./layout.css";
 
 const { Header, Content } = Layout;
 
